@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VÉLVERE - FASHION</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Load React app -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Load Dialogflow Web Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <!-- Define the chatbot -->
+      <df-messenger
+            chat-title="Velvere-chatbot"
+            agent-id="656b9370-76ec-45ce-9132-5336e0444796"
+            language-code="en"
+            chat-icon="/src/assets/logo.png"
+        >
+      </df-messenger>
+          <div id="custom-popup" style="position: fixed; bottom: 28px; right: 90px;
+            background-color: #f3f4f6; padding: 12px 16px; border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); max-width: 250px;">
+            Hi! How can I help you today?
+   
+           </div>
+    </body>
+  </body>
+
+  <script>
+  // Ẩn popup sau 3 giây
+  setTimeout(() => {
+    const popup = document.getElementById("custom-popup");
+    if (popup) popup.style.display = "none";
+  }, 3000); 
+</script>
+</html>

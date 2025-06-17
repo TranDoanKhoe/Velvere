@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+@import 'tailwindcss';
+df-messenger {
+  --df-messenger-bot-message: #e0e0e0;
+  --df-messenger-button-titlebar-color: #1d4ed8;
+  --df-messenger-chat-background-color: #ffffff;
+  --df-messenger-font-color: #000000;
+  --df-messenger-user-message: #c7d2fe;
+   --df-messenger-button-titlebar-color: #000000; /* Xanh dương đậm */
+  --df-messenger-icon-color: #ffffff; /* Màu icon bên trong */
+}
+
+
+
+
+
